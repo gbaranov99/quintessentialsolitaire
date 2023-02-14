@@ -11,8 +11,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Quintessential Solitaire',
       theme: ThemeData(
+        colorScheme: ColorScheme.fromSwatch().copyWith(
+
+          primary: const Color.fromARGB(255, 206, 182, 31),
+          secondary: const Color.fromARGB(255, 206, 182, 31),
+        ),
+        
+            
         // This is the theme of your application.
         //
         // Try running your application with "flutter run". You'll see the
@@ -22,9 +29,10 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.blue,
+        // primarySwatch: Color.fromARGB(255, 184, 121, 38),
+        scaffoldBackgroundColor: const Color.fromARGB(255, 0, 105, 23)
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Welcome to Quintessential Solitaire'),
     );
   }
 }
@@ -94,22 +102,23 @@ class _MyHomePageState extends State<MyHomePage> {
           // axis because Columns are vertical (the cross axis would be
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
-            ),
+          children: const <Widget>[
             Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+              'Welcome to Quintessential Solitaire!',
+              style: TextStyle(height: 5, fontSize: 50, fontFamily: "carolingia",),
             ),
+            // Text(
+            //   '$_counter',
+            //   style: Theme.of(context).textTheme.headline4,
+            // ),
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      // floatingActionButton: FloatingActionButton(
+      //   onPressed: _incrementCounter,
+      //   tooltip: 'Increment',
+      //   child: const Icon(Icons.add),
+      // ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
