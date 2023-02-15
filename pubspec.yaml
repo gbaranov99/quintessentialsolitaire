@@ -29,6 +29,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_arc_text: ^0.5.0
+  flutter_linkify: ^5.0.2
+  url_launcher: ^6.1.9
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -55,11 +58,13 @@ flutter:
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
+  assets:
+    - assets/images/
   uses-material-design: true
   fonts:    
-   - family: carolingia    
-     fonts: 
-         - asset: fonts/carolingia.ttf
+    - family: carolingia    
+      fonts: 
+        - asset: fonts/carolingia.ttf
 
   # To add assets to your application, add an assets section, like this:
   # assets:
