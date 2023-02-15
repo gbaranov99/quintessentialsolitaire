@@ -3,11 +3,11 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "main.dart.js": "366c5895e4baf9922780ef00fa010fea",
+  "main.dart.js": "81993620d0358a739b590fe5f3114064",
 "manifest.json": "0ff557a2aa82b3574f68c5d978127166",
 "version.json": "c6c31c9630dac579ff0edddd37b6a8e3",
-"index.html": "f8a8d0393859793732c80e351069a68c",
-"/": "f8a8d0393859793732c80e351069a68c",
+"index.html": "075d600adb6433e1645afdfda15ce770",
+"/": "075d600adb6433e1645afdfda15ce770",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
@@ -18,7 +18,7 @@ const RESOURCES = {
 "assets/fonts/MaterialIcons-Regular.otf": "95db9098c58fd6db106f1116bae85a0b",
 "assets/packages/flutter_arc_text/assets/README.md": "fbaed1ae60d80596d99545ef45d72803",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
-"assets/NOTICES": "5730a401516ebf8d48923a2fa783888e",
+"assets/NOTICES": "60d471fce9ff4acdc039a13dfdb5182d",
 "assets/FontManifest.json": "661908c3a1fb9a0033b6e74a67098694",
 "assets/assets/images/freecellrocks2.png": "977d401521c9eda854961296adb5d827",
 "assets/assets/images/freecellrocks1.png": "4f177b26309b50474e5587be28b15025",

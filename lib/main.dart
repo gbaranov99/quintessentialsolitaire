@@ -66,7 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: <Widget>[
                   Text(
                     'Welcome to Quintessential Solitaire',
-                    style: TextStyle(height: 1.5, fontSize: 85, fontFamily: "carolingia", shadows: <Shadow>[
+                    style: TextStyle(height: 1.5, fontSize: 51, fontFamily: "carolingia", shadows: <Shadow>[
                       Shadow(
                         offset: Offset(3.0, 3.0),
                         blurRadius: 5.0,
@@ -77,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   InkWell(
                       child: Text(
                         'Go check out the blog:   https://quintessentialsolitaire.substack.com/',
-                        style: TextStyle(height: 1.5, fontSize: 85, fontFamily: "carolingia", shadows: <Shadow>[
+                        style: TextStyle(height: 1.5, fontSize: 51, fontFamily: "carolingia", shadows: <Shadow>[
                           Shadow(
                             offset: Offset(3.0, 3.0),
                             blurRadius: 5.0,

@@ -47480,7 +47480,7 @@ A.qo.prototype={
 aJ(){return new A.E_(B.o)}}
 A.E_.prototype={
 S(a,b){var s="carolingia",r=null,q=t.j8,p=t.T
-return new A.rm(A.a_c(r,A.a_5(A.a4a(A.a([new A.wR(B.ja,B.pg,B.e9,B.jP,r,B.iZ,r,A.a([A.a4s("Welcome to Quintessential Solitaire",A.nj(r,r,r,r,r,r,r,r,s,r,r,85,r,r,r,1.5,!0,r,r,r,r,r,A.a([new A.fK(A.bp(255,0,0,0),new A.A(3,3),5)],q),r,r)),A.a37(!1,!0,A.a4s("Go check out the blog:   https://quintessentialsolitaire.substack.com/",A.nj(r,r,r,r,r,r,r,r,s,r,r,85,r,r,r,1.5,!0,r,r,r,r,r,A.a([new A.fK(A.bp(255,0,0,0),new A.A(3,3),5)],q),r,r)),r,!0,r,r,r,r,r,r,r,r,r,new A.Wo(),r)],p),r)],p),B.A3,B.e9),r,r),r,B.rG,r,r,r),r)}}
+return new A.rm(A.a_c(r,A.a_5(A.a4a(A.a([new A.wR(B.ja,B.pg,B.e9,B.jP,r,B.iZ,r,A.a([A.a4s("Welcome to Quintessential Solitaire",A.nj(r,r,r,r,r,r,r,r,s,r,r,51,r,r,r,1.5,!0,r,r,r,r,r,A.a([new A.fK(A.bp(255,0,0,0),new A.A(3,3),5)],q),r,r)),A.a37(!1,!0,A.a4s("Go check out the blog:   https://quintessentialsolitaire.substack.com/",A.nj(r,r,r,r,r,r,r,r,s,r,r,51,r,r,r,1.5,!0,r,r,r,r,r,A.a([new A.fK(A.bp(255,0,0,0),new A.A(3,3),5)],q),r,r)),r,!0,r,r,r,r,r,r,r,r,r,new A.Wo(),r)],p),r)],p),B.A3,B.e9),r,r),r,B.rG,r,r,r),r)}}
 A.Wo.prototype={
 $0(){return A.Zc("https://quintessentialsolitaire.substack.com/")},
 $S:0}
