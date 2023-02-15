@@ -3,11 +3,11 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "main.dart.js": "c674665078389df70195da25285258a4",
+  "main.dart.js": "366c5895e4baf9922780ef00fa010fea",
 "manifest.json": "0ff557a2aa82b3574f68c5d978127166",
 "version.json": "c6c31c9630dac579ff0edddd37b6a8e3",
-"index.html": "0c03d67ed120fca1fcf3798e597a8372",
-"/": "0c03d67ed120fca1fcf3798e597a8372",
+"index.html": "411900835b67b4de3bb5eabddd2d0f65",
+"/": "411900835b67b4de3bb5eabddd2d0f65",
 "flutter.js": "0816e65a103ba8ba51b174eeeeb2cb67",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
@@ -18,12 +18,17 @@ const RESOURCES = {
 "canvaskit/canvaskit.wasm": "4b83d89d9fecbea8ca46f2f760c5a9ba",
 "canvaskit/profiling/canvaskit.js": "ae2949af4efc61d28a4a80fffa1db900",
 "canvaskit/profiling/canvaskit.wasm": "95e736ab31147d1b2c7b25f11d4c32cd",
-"assets/AssetManifest.json": "6c872bed92327707e7108a552dad7d27",
+"assets/AssetManifest.json": "7eed4fdf7ec26704cdd09ff23cbddb11",
 "assets/fonts/carolingia.ttf": "4565451cb158af1f074941981c6b9cf8",
 "assets/fonts/MaterialIcons-Regular.otf": "95db9098c58fd6db106f1116bae85a0b",
+"assets/packages/flutter_arc_text/assets/README.md": "fbaed1ae60d80596d99545ef45d72803",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
-"assets/NOTICES": "74a5bed8b0d964bf30fe1606ecdcdefe",
-"assets/FontManifest.json": "661908c3a1fb9a0033b6e74a67098694"
+"assets/NOTICES": "5730a401516ebf8d48923a2fa783888e",
+"assets/FontManifest.json": "661908c3a1fb9a0033b6e74a67098694",
+"assets/assets/images/freecellrocks2.png": "977d401521c9eda854961296adb5d827",
+"assets/assets/images/freecellrocks1.png": "4f177b26309b50474e5587be28b15025",
+"assets/assets/images/freecellrocks.png": "5957d3b133fcc3cbab90ad64ce8de5e1",
+"assets/assets/images/faelt.jpg": "be6f7cc212f3437277fda81a11af2486"
 };
 
 // The application shell files that are downloaded before a service worker can
