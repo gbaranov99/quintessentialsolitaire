@@ -60,12 +60,13 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   assets:
-    - assets/images/freecellrocks2.png
+    - assets/images/faelt.jpg
+    - assets/images/doublepyramid.gif
   uses-material-design: true
-  fonts:    
-    - family: carolingia    
-      fonts: 
-        - asset: fonts/carolingia.ttf
+  # fonts:    
+  #   - family: carolingia    
+  #     fonts: 
+  #       - asset: fonts/carolingia.ttf
 
   # To add assets to your application, add an assets section, like this:
   # assets:

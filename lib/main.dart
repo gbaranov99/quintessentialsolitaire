@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:auto_size_text/auto_size_text.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
           primary: const Color.fromARGB(255, 206, 182, 31),
           secondary: const Color.fromARGB(255, 206, 182, 31),
         ),
-        scaffoldBackgroundColor: const Color.fromARGB(255, 0, 105, 23)
+        scaffoldBackgroundColor: const Color.fromARGB(255, 0, 0, 0)
       ),
       home: const MyHomePage(title: 'Welcome to Quintessential Solitaire'),
     );
@@ -36,90 +36,101 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       // appBar: AppBar(
       //   title: Text(widget.title),
       // ),
-      body: Container(
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage("assets/images/freecellrocks2.png"),
-            fit: BoxFit.cover,
+      body: MyStatelessWidget(),
+    );
+  }
+}
+
+class MyStatelessWidget extends StatelessWidget {
+  const MyStatelessWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return FittedBox(
+      fit: BoxFit.scaleDown,
+      alignment: Alignment.topCenter,
+      child: Column(
+        children: <Widget>[ 
+          Container(
+            height: 50
           ),
-        ),
-        child: Center( 
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: <Widget>[
-                  Text(
-                    'Welcome to Quintessential Solitaire',
-                    style: TextStyle(height: 1.5, fontSize: 51, fontFamily: "carolingia", shadows: <Shadow>[
-                      Shadow(
-                        offset: Offset(3.0, 3.0),
-                        blurRadius: 5.0,
-                        color: Color.fromARGB(255, 0, 0, 0),
-                      ),
-                      ]),
+          Container(
+            child: Row(
+              children: <Widget> [
+                Container(
+                  height: 200,
+                  width: 200,
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage("assets/images/doublepyramid.gif"),
+                      fit: BoxFit.cover,
+                    ),
                   ),
-                  InkWell(
-                      child: Text(
-                        'Go check out the blog:   https://quintessentialsolitaire.substack.com/',
-                        style: TextStyle(height: 1.5, fontSize: 51, fontFamily: "carolingia", shadows: <Shadow>[
-                          Shadow(
-                            offset: Offset(3.0, 3.0),
-                            blurRadius: 5.0,
-                            color: Color.fromARGB(255, 0, 0, 0),
-                          ),
-                        ]),
-                      ),
-                      onTap: () => launch('https://quintessentialsolitaire.substack.com/')
+                ),
+                SizedBox(width: 200),
+                AutoSizeText(
+                  "Welcome to Quintessential Solitaire",
+                  style: TextStyle(fontSize: 120.0, color: Colors.yellow),
+                  maxLines: 1,
+                ),
+                SizedBox(width: 200),
+                Container(
+                  height: 200,
+                  width: 200,
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage("assets/images/doublepyramid.gif"),
+                      fit: BoxFit.cover,
+                    ),
                   ),
-                  // Text(
-                  //   'Check out the blog:   https://quintessentialsolitaire.substack.com/',
-                  //   style: TextStyle(height: 1.5, fontSize: 85, fontFamily: "carolingia", shadows: <Shadow>[
-                  //     Shadow(
-                  //       offset: Offset(3.0, 3.0),
-                  //       blurRadius: 5.0,
-                  //       color: Color.fromARGB(255, 0, 0, 0),
-                  //     ),
-                  //     ]),
-                  // ),
-                ],
+                ),
+              ],
+            ),
+          ),
+          Container( height: 50 ),
+          InkWell(
+            child: AutoSizeText(
+              'Go check out the blog: https://quintessentialsolitaire.substack.com/',
+              style: TextStyle(fontSize: 100.0, color: Colors.yellow),
+              maxLines: 2,
+            ),
+            onTap: () => launch('https://quintessentialsolitaire.substack.com/')
+          ),
+          Container(
+            height: 100
+          ),
+          FittedBox(
+            fit: BoxFit.fitHeight,
+            child: Container(
+              width: 2000,
+              height:1100,
+              decoration: const BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage("assets/images/faelt.jpg"),
+                  fit: BoxFit.cover,
+                ),
               ),
-            ]
+              child: FittedBox(
+                fit: BoxFit.scaleDown,
+                alignment: Alignment.center,
+                child: AutoSizeText(
+                  "Online solitaire (and more) coming soon...",
+                  style: TextStyle(fontSize: 100.0, color: Color.fromARGB(255, 255, 255, 255)),
+                  maxLines: 1,
+                ),
+              ),
+            ),
           ),
-        ),
-        // child: Positioned( 
-        //     left: 200.0,
-        //     top: 200.0,
-        //     child: Container(
-        //       width: 1000.0,
-        //       height: 1000.0,
-        //       child: Text(
-        //           'Welcome to Quintessential Solitaire',
-        //           style: TextStyle(height: -8, fontSize: 51, fontFamily: "carolingia",),
-        //         ),
-        //       )
-        //   ),
+          Container( height: 50 )
+        ],
       ),
-    //   floatingActionButton: FloatingActionButton(
-    //     onPressed: _incrementCounter,
-    //     tooltip: 'Increment',
-    //     child: const Icon(Icons.add),
-    //   ),
     );
   }
 }
