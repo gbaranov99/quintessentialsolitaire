@@ -16,8 +16,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSwatch().copyWith(
 
-          primary: const Color.fromARGB(255, 206, 182, 31),
-          secondary: const Color.fromARGB(255, 206, 182, 31),
+          primary: Color.fromARGB(255, 0, 0, 0),
+          secondary: Color.fromARGB(255, 0, 0, 0),
         ),
         scaffoldBackgroundColor: const Color.fromARGB(255, 0, 0, 0)
       ),
@@ -43,7 +43,9 @@ class _MyHomePageState extends State<MyHomePage> {
       // appBar: AppBar(
       //   title: Text(widget.title),
       // ),
-      body: MyStatelessWidget(),
+      body: Center(
+        child: MyStatelessWidget(),
+      )
     );
   }
 }
